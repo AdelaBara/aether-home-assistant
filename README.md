@@ -20,6 +20,53 @@ It sends aligned historical readings to Aether so they can be used for energy an
 
 ## Installation with HACS
 
+### If HACS is not installed
+
+Install HACS first:
+
+1. In Home Assistant, go to **Settings > Apps**.
+2. Click **Install App**.
+3. Search for **HACS**.
+4. Install HACS.
+
+If HACS does not appear in the list:
+
+1. Click the three-dot menu.
+2. Open **Repositories**.
+3. Add this repository:
+
+   ```text
+   https://github.com/hacs/addons
+   ```
+
+4. Refresh or reload the page.
+5. Search for **HACS** again and install it.
+
+After installing HACS, configure it:
+
+1. Go to **Settings > Devices & services**.
+2. Click **Add integration**.
+3. Search for **HACS**.
+4. Accept the terms.
+5. Follow the GitHub device authentication flow.
+6. Enter the device code in GitHub.
+7. Authorize HACS.
+
+After HACS appears in the Home Assistant sidebar, add the Aether repository:
+
+1. Go to **HACS > Integrations**.
+2. Open the three-dot menu.
+3. Select **Custom repositories**.
+4. Add this repository URL:
+
+   ```text
+   https://github.com/AdelaBara/aether-home-assistant
+   ```
+
+5. Select type **Integration**.
+
+### Install Aether from HACS
+
 1. Open Home Assistant.
 2. Go to **HACS**.
 3. Open the three-dot menu and select **Custom repositories**.
