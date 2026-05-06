@@ -1,0 +1,12 @@
+{
+  "domain": "aether",
+  "name": "Aether",
+  "version": "1.0.0",
+  "config_flow": true,
+  "documentation": "https://ase.open4cec.eu/aether/",
+  "issue_tracker": "https://ase.open4cec.eu/aether/",
+  "codeowners": ["@AdelaBara"],
+  "iot_class": "cloud_polling",
+  "requirements": [],
+  "dependencies": ["recorder"]
+}

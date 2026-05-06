@@ -1,0 +1,52 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Aether",
+        "description": "Configure the backend endpoint and select the sensors Aether should export from recorder history.",
+        "data": {
+          "backend_url": "Backend URL",
+          "api_token": "API token",
+          "pv_power_sensor": "PV power sensor",
+          "consumption_sensor": "Load/consumption sensor",
+          "battery_sensor": "Battery sensor"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "This Aether backend is already configured."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "last_upload_status": {
+        "name": "Last upload status"
+      },
+      "last_upload_timestamp": {
+        "name": "Last upload timestamp"
+      },
+      "last_response_latency": {
+        "name": "Last response latency"
+      },
+      "last_exported_records": {
+        "name": "Last exported records"
+      }
+    }
+  },
+  "services": {
+    "export_history": {
+      "name": "Export history",
+      "description": "Export Home Assistant recorder history for the configured load, generation, and battery sensors.",
+      "fields": {
+        "start_time": {
+          "name": "Start time",
+          "description": "Start of the historical export window."
+        },
+        "end_time": {
+          "name": "End time",
+          "description": "End of the historical export window. Defaults to 24 hours after the start time."
+        }
+      }
+    }
+  }
+}

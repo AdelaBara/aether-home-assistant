@@ -1,0 +1,16 @@
+export_history:
+  name: Export history
+  description: Export Home Assistant recorder history for the configured load, generation, and battery sensors.
+  fields:
+    start_time:
+      name: Start time
+      description: Start of the historical export window.
+      required: true
+      selector:
+        datetime:
+    end_time:
+      name: End time
+      description: End of the historical export window. Defaults to 24 hours after the start time.
+      required: false
+      selector:
+        datetime:
